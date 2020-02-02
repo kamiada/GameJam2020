@@ -4,4 +4,7 @@ You can repair lots of things, including relationships, and by "relationships", 
 Tip for the future: learn how canvas and screens works in Unity.
 
 Programming and game design - Adrianna Kaminska
+
 Art - Marco Moroni 
+
+Music - James Downie
