@@ -1,2 +1,2 @@
 # GameJam2020
-PandaMediator
+You can repair lots of things, including relationships, and by "relationships", I also mean relationships between the countries! Stop the war and save the world! Or die under atomic bombs
