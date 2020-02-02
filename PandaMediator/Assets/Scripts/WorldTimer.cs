@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEditor;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class WorldTimer : MonoBehaviour
 {
-    public float world_timer= 60.0f;
-     public Text screen_timer;
+    float world_timer= 15.0f;
+    float delay = 2.0f;
+    public Text screen_timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +22,15 @@ public class WorldTimer : MonoBehaviour
         screen_timer.text = world_timer.ToString();
         if(world_timer <= 0.0f)
         {
-            //THE END
+            delay -= Time.deltaTime;
+            if(delay <=-0.0f)
+            {
+                LoadScene("GameOver");
+            }
         }
+    }
+    public void LoadScene(string SceneName)
+    {
+        SceneManager.LoadScene(SceneName);
     }
 }

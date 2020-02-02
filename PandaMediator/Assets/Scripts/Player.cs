@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
                 //add item to inventory
                 GetComponent<Inventory>().hasItem = true;
                 GetComponent<Inventory>().item = other.GetComponent<Item>().type;
-                inventory.GetComponent<SpriteRenderer>().sprite = other.GetComponent<Image>().sprite;
+                inventory.GetComponent<SpriteRenderer>().sprite = other.GetComponent<SpriteRenderer>().sprite;
                 Destroy(other.gameObject);
             }
         }
@@ -87,7 +87,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            EditorSceneManager.LoadScene(0);
+            SceneManager.LoadScene(0);
         }
     }
 }

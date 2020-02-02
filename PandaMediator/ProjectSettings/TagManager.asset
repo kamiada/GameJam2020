@@ -10,6 +10,8 @@ TagManager:
   - Inventory
   - Phone
   - screen-timer
+  - cloud_text
+  - cloud
   layers:
   - Default
   - TransparentFX
